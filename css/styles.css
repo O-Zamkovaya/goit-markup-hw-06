@@ -277,8 +277,10 @@ a {
 
 .page-team {
   background: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .team-title {
@@ -295,11 +297,13 @@ a {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  /* gap: 24px; */
+  gap: 72px;
+  justify-content: center;
 }
 
 .tem-item {
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
   background-color: #fff;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -369,8 +373,10 @@ a {
 /* ===========portfolio=========== */
 
 .page-portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px; */
+  /* padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .portfolio-title {
@@ -392,7 +398,8 @@ a {
 }
 
 .portfolio-item {
-  width: calc((100% - 48px) / 3);
+  /* width: calc((100% - 48px) / 3); */
+  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -412,7 +419,9 @@ a {
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
-  width: 360px;
+  /* width: 360px; */
+  /* height: 120px; */
+  width: 288px;
   height: 120px;
 }
 
@@ -865,6 +874,8 @@ a {
     max-width: 768px;
   }
 
+  /* ===About=== */
+
   .about-list {
     column-gap: 24px;
   }
@@ -876,11 +887,33 @@ a {
   .about-title {
     text-align: start;
   }
+
+  /* ===Team=== */
+  .team-list {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+
+  /* ===Portfolio=== */
+  .portfolio-list {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .container-text {
+    width: 356px;
+    height: 120px;
+  }
 }
 
 /* =======Dasctop======== */
 
 @media screen and (min-width: 1158px) {
+  /* ===About=== */
   .container {
     max-width: 1158px;
     /* padding: 0 15px; */
@@ -918,5 +951,33 @@ a {
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 8px;
+  }
+
+  /* ===Team=== */
+  .page-team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team-list {
+    gap: 24px;
+  }
+
+  .tem-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  /* ===Portfolio=== */
+  .page-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .container-text{width: 360px;
+    height: 120px;
   }
 }
