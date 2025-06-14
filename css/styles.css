@@ -224,11 +224,14 @@ a {
   color: #404bbf;
 }
 
+.mobile-menu-contacts {
+  margin-bottom: 48px;
+}
+
 .mobile-address-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 48px;
 }
 
 .mobile-address-link {
@@ -583,6 +586,10 @@ a {
   padding: 96px 0;
 }
 
+.footer-item {
+  margin-bottom: 72px;
+}
+
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
@@ -590,7 +597,6 @@ a {
   color: #f4f4fd;
   max-width: 264px;
   padding: 0;
-  margin-bottom: 72px;
 }
 
 .footer-box {
